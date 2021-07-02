@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="Violet Homework"/>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/violet hw.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Barriecito|Cabin+Sketch|Fredericka+the+Great&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="vhw.js"></script>
+
+	<style type="text/css">
+	body {
+	border-color: #8b008b;
+	margin: 2%;
+	border: 2px solid;
+	background-color: #ffc0cb;
+	background-image: url("cactus.gif"), url("fruit.gif");
+	background-size: 10%, 10%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 10% 3%, 90% 3%;
+	}
+	</style>
+
+	<title> Violet Homework </title>
+</head>
+<body>
+
+<!-- INTRODUCTION -->
+
+<div>
+	
+	<h1 class="intro">
+	Rewrite Spelling words
+	</h1>
+
+</div>
+
+<!-- NAVIGATION -->
+
+<div class="nav space">
+	<a href="home.html"> Home </a>
+	<a href="math.html"> Math </a>
+	<a href="english.html"> English </a>
+</div>
+
+<div class="space">
+
+<!-- -------------- WORD 1 ------------ -->
+<form class="text form">
+	<fieldset>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"narrator"</span>:
+		<br>
+		<input type="text" class="text" id="word1">
+		<input type="button" value="check" class="button" onclick="spell1()">
+		<br>
+		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"narrator"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 2 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"things"</span>:
+		<br>
+		<input type="text" class="text" id="word2">
+		<input type="button" value="Check" class="button" onclick="spell2()">
+		<br>
+		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"things"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 3 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"couldn't"</span>:
+		<br>
+  		<input type="text" class="text" id="word3">
+ 		<input type="button" value="Check" class="button" onclick="spell3()">
+ 		<br>
+ 		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"couldn't"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- ------------- ENCOURAGE ------------- -->
+
+<img src="media/keep.gif" style="width: 30%; display: block; margin-right: auto; margin-left: auto;">
+
+<!-- -------------- WORD 4 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"everyone"</span>:
+		<br>
+		<input type="text" class="text" id="word4">
+  		<input type="button" value="Check" class="button" onclick="spell4()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"everyone"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 5 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"that's"</span>:
+		<br>
+		<input type="text" class="text" id="word5">
+  		<input type="button" value="Check" class="button" onclick="spell5()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"that's"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 6 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"through"</span>:
+		<br>
+		<input type="text" class="text" id="word6">
+  		<input type="button" value="Check" class="button" onclick="spell6()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"through"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- ------------- ENCOURAGE ------------- -->
+
+<img src="media/dont.gif" style="width: 30%; display: block; margin-right: auto; margin-left: auto;">
+
+<!-- -------------- WORD 7 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"I've"</span>:
+		<br>
+		<input type="text" class="text" id="word7">
+  		<input type="button" value="Check" class="button" onclick="spell7()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"I've"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 8 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"school"</span>:
+		<br>
+		<input type="text" class="text" id="word8">
+  		<input type="button" value="Check" class="button" onclick="spell8()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"school"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- -------------- WORD 9 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"around"</span>:
+		<br>
+		<input type="text" class="text" id="word9">
+  		<input type="button" value="Check" class="button" onclick="spell9()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"around"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- ------------- ENCOURAGE ------------- -->
+
+<img src="media/one.gif" style="width: 30%; display: block; margin-right: auto; margin-left: auto;">
+
+<!-- -------------- WORD 10 ------------ -->
+
+<form class="text form">
+	<fieldset>
+		<br>
+		Rewrite the word <span style="color: #4b0082; font-size: 25px">"think"</span>:
+		<br>
+		 <input type="text" class="text" id="word10">
+  		<input type="button" value="Check" class="button" onclick="spell10()">
+  		<br>
+  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"think"</span>:
+		<br>
+		<input type="text" class="box">
+		<br>
+	</fieldset>
+</form>
+
+<!-- ------------- ENCOURAGE ------------- -->
+
+<img src="media/super.gif" style="width: 30%; display: block; margin-right: auto; margin-left: auto;">
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
