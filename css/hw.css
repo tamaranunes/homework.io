@@ -1,0 +1,324 @@
+/* BODY */
+
+body {
+	margin: 2%;
+	border: 2px solid #8b008b;
+	background-color: #ffc0cb;
+}
+
+/* HEADING INTRO */
+
+.intro {
+	color: #9932cc;
+	text-align: center;
+	text-shadow: 2px 2px #dda0dd;
+	font-size: 50px;
+	font-family: 'Fredericka the Great';
+}
+
+/* NAV */
+
+.nav {
+	text-align: center;
+	font-family: 'Barriecito';
+}
+
+.nav a {
+	background-color: #da70d6;
+	text-align: center;
+	display: inline-block;
+	color: black;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 27px;
+	border-radius: 5px;
+	margin: 2%;
+	box-shadow: 5px 5px #c71585;
+}
+
+.nav a:hover {
+	background-color: #ee82ee;
+	color: black;
+}
+
+.nav a:active {
+	background-color: #ff69b4;
+	color: white;
+}
+
+/* BOTTOM IMAGE */
+
+.grass {
+	text-align: center;
+	width: 40%;
+}
+
+.mathpic {
+  text-align: center;
+  width: 20%;
+  margin-top: -110px; /* 👈 pull it upward */
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+/* HOME PAGE: ANIMATED BIRD */
+
+@keyframes move {
+	from   {left:300px; top:0px;}
+  	to  {left:700px; top: 0px; transform: rotateY(180deg);}
+}
+
+.anim {
+  position: relative;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* SPELLING HEADING */
+
+.center {
+	text-align: center;
+}
+
+.spellingHead {
+	color: #800080;
+	font-family: 'Cabin Sketch';
+	font-size: 30px;
+	text-align: center;
+}
+ 
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+  display: inline-block;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+}
+
+/* FORM SPELLING */
+
+.form {
+	text-align: center;
+}
+
+.text {
+	font-family: 'Cabin Sketch';
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	clear: both;
+}
+
+.button {
+	border-radius: 60%;
+	background-color: #ff69b4;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 #ff1493, 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type=text] {
+  background-color: #ffe6ea;
+  color: #9400d3;
+  padding: 15px;
+}
+
+/* BUTTON FOR AUDIO */
+
+.play {
+	border-radius: 50%;
+	background-color: #ff69b4;
+	font-family: 'Fredericka the Great';
+	font-size: 20px;
+}
+
+.play:hover {
+  box-shadow: 0 12px 16px 0 #ff1493, 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.play:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* SPELLING: SUBHEADER - PICK ONE */
+
+.pick {
+	font-family: 'Fredericka the Great';
+	color: #9370db;
+	text-align: center;
+	margin-bottom: 90px; /* Add this */
+}
+
+/* CREATE SPACE UNDERNEATH THE LAST DIV */
+
+.space {
+	padding-bottom: 5%;
+}
+
+/* REWRITE SPELLING TEXTBOX SIZE */
+
+.box {
+	width: 50%;
+	font-family: 'Cabin Sketch';
+	font-size: 20px;
+	letter-spacing: 2px;
+	clear: both;
+}
+
+/* WRITING: EACH WORD'S BOX AROUND THEM */
+
+fieldset {
+	display: block;
+	margin-right: 150px;
+	margin-left: 150px;
+	border-color: #8b008b;
+	border-width: 5px;
+	border-radius: 5%;
+	margin-bottom: 10px;
+	background-color: #f9d2f9;
+}
+
+/* NUMBER LINE CODE */
+
+.nav-container {
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.arrow {
+	position: absolute;
+	width: 100px; /* or try 100px if you want it huge */
+	transition: left 0.3s ease, top 0.3s ease;
+	z-index: 10;
+}
+
+.nav-btn {
+	/* Optional override, or just use your .nav a styles */
+}
+
+/* MENTAL MATHS PAGE */
+
+.math-ops {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.math-ops a {
+	background-color: #da70d6;
+	text-align: center;
+	display: inline-block;
+	color: black;
+	padding: 20px 30px;
+	text-decoration: none;
+	font-size: 27px;
+	border-radius: 5px;
+	margin: 2%;
+	box-shadow: 5px 5px #c71585;
+}
+
+.math-ops a:hover {
+	background-color: #ee82ee;
+	color: black;
+}
+
+.math-ops a:active {
+	background-color: #ff69b4;
+	color: white;
+}
+
+.back-link {
+	display: block;
+	text-align: center;
+	font-family: 'Barriecito';
+	font-size: 24px;
+	margin-top: 100px;
+	text-decoration: none;
+	color: #4b0082;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+}
+
+.small-button {
+  font-size: 20px; /* Make text bigger */
+  padding: 10px 20px; /* Increase button padding */
+  border-radius: 20px;
+  margin: 10px;
+  /* You can add more styling if needed */
+}
+
+/* MENTAL MATH ARROW */
+
+.mentalarrow {
+  position: absolute;
+  width: 100px;
+  z-index: 10;
+  transition: left 0.3s ease, top 0.3s ease;
+  visibility: visible; /* <— make sure this is set */
+}
+
+/* PICTURE MATCH */
+
+#game-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#question-box {
+  font-size: 30px;
+  font-family: 'Cabin Sketch', cursive;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option {
+  width: 30%;
+  aspect-ratio: 1 / 1;          /* Keeps them square */
+  object-fit: contain;         /* Scale image nicely inside box */
+  padding: 5px;
+  background-color: transparent;     /* Optional: makes shape easier to see */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.option:hover {
+  transform: scale(1.1);
+  border-color: #E5989B;
+}
+
+#feedback {
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+
+
