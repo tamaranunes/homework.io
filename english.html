@@ -4,9 +4,10 @@
 <head>
 	<meta name="description" content="Violet Homework"/>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="css/violet hw.css"/>
+	<link rel="stylesheet" type="text/css" href="css/hw.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Barriecito|Cabin+Sketch|Fredericka+the+Great&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="vhw.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<script type="text/javascript" src="js/hw.js"></script>
 	<title> Violet Homework </title>
 </head>
 
@@ -22,6 +23,16 @@
 
 </div>
 
+<!-- PARENT ZONE BUTTON -->
+
+<div style="text-align: right; margin: 10px 20px 0 0;">
+
+  <button type="button" onclick="window.location.href='parent.html'" class="button"> Parent Zone
+  </button>
+
+</div>
+
+
 <!-- SUBHEADING -->
 
 <div>
@@ -32,26 +43,21 @@
 
 </div>
 
-<!-- ARROWS -->
+<!-- NAVIGATION SECTION WITH ARROW -->
 
-<div>
-	
-	<img src="media/arrow.gif" style="width: 20%; display: block; margin-right: auto; margin-left: auto;">
+<div class="nav-container">
+	<img src="media/arrow.gif" id="hover-arrow" class="arrow">
 
+	<div class="nav">
+		<a href="home.html" class="nav-btn">Home</a>
+		<a href="spelling.html" class="nav-btn">Spelling</a>
+		<a href="write.html" class="nav-btn">Writing</a>
+	</div>
 </div>
 
-<!-- NAV -->
-	
-<div class="nav">
+<!-- BOTTOM IMAGE -->
 
-	<a href="home.html"> Home </a>
-	<a href="spelling.html"> Spelling </a>
-	<a href="write.html"> Writing </a>
-
-</div>
-
-<img src="media/apples.gif" style="width: 20%; display: block; margin-right: auto; margin-left: auto;">
-
+<img src="media/apples.gif" style="width: 15%; display: block; margin-right: auto; margin-left: auto;">
 
 </body>
 </html>

@@ -4,9 +4,9 @@
 <head>
 	<meta name="description" content="Violet Homework"/>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="css/violet hw.css"/>
+	<link rel="stylesheet" type="text/css" href="css/hw.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Barriecito|Cabin+Sketch|Fredericka+the+Great&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="vhw.js"></script>
+	<script type="text/javascript" src="js/hw.js"></script>
 
 	<style type="text/css">
 	body {
@@ -48,32 +48,49 @@
 <!-- -------------- WORD 1 ------------ -->
 <form class="text form">
 	<fieldset>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"narrator"</span>:
+		Rewrite the word <span id="wordLabel1" style="color: #4b0082; font-size: 25px">"word1"</span>:
 		<br>
 		<input type="text" class="text" id="word1">
-		<input type="button" value="check" class="button" onclick="spell1()">
+		<input type="button" value="check" class="play" onclick="spell1()">
 		<br>
-		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"narrator"</span>:
+		Make a sentence with the word <span id="wordLabel1b" style="color: #4b0082; font-size: 25px">"word1"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence1">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence1', 'published1')">
+		
+		<div id="published1" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
+
 
 <!-- -------------- WORD 2 ------------ -->
 
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"things"</span>:
+		Rewrite the word <span id="wordLabel2" style="color: #4b0082; font-size: 25px">"word2"</span>:
 		<br>
 		<input type="text" class="text" id="word2">
-		<input type="button" value="Check" class="button" onclick="spell2()">
+		<input type="button" value="Check" class="play" onclick="spell2()">
 		<br>
-		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"things"</span>:
+		Make a sentence with the word <span id="wordLabel2b" style="color: #4b0082; font-size: 25px">"word2"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence2">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence2', 'published2')">
+		
+		<div id="published2" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -82,15 +99,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"couldn't"</span>:
+		Rewrite the word <span id="wordLabel3" style="color: #4b0082; font-size: 25px">"word3"</span>:
 		<br>
   		<input type="text" class="text" id="word3">
- 		<input type="button" value="Check" class="button" onclick="spell3()">
+ 		<input type="button" value="Check" class="play" onclick="spell3()">
  		<br>
- 		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"couldn't"</span>:
+ 		Make a sentence with the word <span id="wordLabel3b" style="color: #4b0082; font-size: 25px">"word3"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence3">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence3', 'published3')">
+		
+		<div id="published3" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -103,15 +128,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"everyone"</span>:
+		Rewrite the word <span id="wordLabel4" style="color: #4b0082; font-size: 25px">"word4"</span>:
 		<br>
 		<input type="text" class="text" id="word4">
-  		<input type="button" value="Check" class="button" onclick="spell4()">
+  		<input type="button" value="Check" class="play" onclick="spell4()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"everyone"</span>:
+  		Make a sentence with the word <span id="wordLabel4b" style="color: #4b0082; font-size: 25px">"word4"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence4">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence4', 'published4')">
+		
+		<div id="published4" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -120,15 +153,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"that's"</span>:
+		Rewrite the word <span id="wordLabel5" style="color: #4b0082; font-size: 25px">"word5"</span>:
 		<br>
 		<input type="text" class="text" id="word5">
-  		<input type="button" value="Check" class="button" onclick="spell5()">
+  		<input type="button" value="Check" class="play" onclick="spell5()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"that's"</span>:
+  		Make a sentence with the word <span id="wordLabel5b" style="color: #4b0082; font-size: 25px">"word5"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence5">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence5', 'published5')">
+		
+		<div id="published5" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -137,15 +178,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"through"</span>:
+		Rewrite the word <span id="wordLabel6" style="color: #4b0082; font-size: 25px">"word6"</span>:
 		<br>
 		<input type="text" class="text" id="word6">
-  		<input type="button" value="Check" class="button" onclick="spell6()">
+  		<input type="button" value="Check" class="play" onclick="spell6()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"through"</span>:
+  		Make a sentence with the word <span id="wordLabel6b" style="color: #4b0082; font-size: 25px">"word6"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence6">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence6', 'published6')">
+		
+		<div id="published6" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -158,15 +207,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"I've"</span>:
+		Rewrite the word <span id="wordLabel7" style="color: #4b0082; font-size: 25px">"word7"</span>:
 		<br>
 		<input type="text" class="text" id="word7">
-  		<input type="button" value="Check" class="button" onclick="spell7()">
+  		<input type="button" value="Check" class="play" onclick="spell7()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"I've"</span>:
+  		Make a sentence with the word <span id="wordLabel7b" style="color: #4b0082; font-size: 25px">"word7"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence7">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence7', 'published7')">
+		
+		<div id="published7" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -175,15 +232,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"school"</span>:
+		Rewrite the word <span id="wordLabel8" style="color: #4b0082; font-size: 25px">"word8"</span>:
 		<br>
 		<input type="text" class="text" id="word8">
-  		<input type="button" value="Check" class="button" onclick="spell8()">
+  		<input type="button" value="Check" class="play" onclick="spell8()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"school"</span>:
+  		MMake a sentence with the word <span id="wordLabel8b" style="color: #4b0082; font-size: 25px">"word8"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence8">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence8', 'published8')">
+		
+		<div id="published8" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -192,15 +257,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"around"</span>:
+		Rewrite the word <span id="wordLabel9" style="color: #4b0082; font-size: 25px">"word9"</span>:
 		<br>
 		<input type="text" class="text" id="word9">
-  		<input type="button" value="Check" class="button" onclick="spell9()">
+  		<input type="button" value="Check" class="play" onclick="spell9()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"around"</span>:
+  		Make a sentence with the word <span id="wordLabel9b" style="color: #4b0082; font-size: 25px">"word9"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence9">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence9', 'published9')">
+		
+		<div id="published9" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 
@@ -213,15 +286,23 @@
 <form class="text form">
 	<fieldset>
 		<br>
-		Rewrite the word <span style="color: #4b0082; font-size: 25px">"think"</span>:
+		Rewrite the word <span id="wordLabel10" style="color: #4b0082; font-size: 25px">"word10"</span>:
 		<br>
 		 <input type="text" class="text" id="word10">
-  		<input type="button" value="Check" class="button" onclick="spell10()">
+  		<input type="button" value="Check" class="play" onclick="spell10()">
   		<br>
-  		Make a sentence with the word <span style="color: #4b0082; font-size: 25px">"think"</span>:
+  		Make a sentence with the word <span id="wordLabel10b" style="color: #4b0082; font-size: 25px">"word10"</span>:
 		<br>
-		<input type="text" class="box">
+		<input type="text" class="box" id="sentence10">
 		<br>
+		<input type="button" class="play" value="Done" onclick="publishSentence('sentence10', 'published10')">
+		
+		<div id="published10" style="display: none; margin-top: 10px;">
+			<fieldset style="border-color: purple; border-width: 3px; background-color: #fff0fb; font-family: 'Cabin Sketch'; font-size: 20px; color: #800080;">
+				<legend style="font-size: 18px;">Your Sentence</legend>
+				<p style="padding: 10px;"></p>
+			</fieldset>
+		</div>
 	</fieldset>
 </form>
 

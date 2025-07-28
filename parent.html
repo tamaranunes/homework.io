@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Parent Area - Violet Homework</title>
+  <link rel="stylesheet" href="css/hw.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      background-color: #fff0f5;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #4b0082;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      font-size: 18px;
+      width: 60%;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      background-color: #dda0dd;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Parent Area</h1>
+  <p>Please enter the 10 spelling words for this week:</p>
+
+  <div id="word-inputs">
+    <!-- JS will generate 10 input fields here -->
+  </div>
+
+  <button onclick="saveWords()">Save Words</button>
+  <div class="success-message" id="successMessage" style="display: none;">Saved!</div>
+
+  <!-- BACK TO ENGLISH PAGE BUTTON -->
+  <div>
+    <button class="back-btn" onclick="window.location.href='english.html'">⬅ Back to English Page</button>
+  </div>
+
+  <script>
+    // Create 10 input fields
+    const wordInputs = document.getElementById('word-inputs');
+    for (let i = 1; i <= 10; i++) {
+      const div = document.createElement('div');
+      div.className = 'input-group';
+      div.innerHTML = `
+        <label for="word${i}">Word ${i}:</label><br>
+        <input type="text" id="word${i}" placeholder="Enter word ${i}">
+      `;
+      wordInputs.appendChild(div);
+    }
+
+    // Save to localStorage
+    function saveWords() {
+      for (let i = 1; i <= 10; i++) {
+        const value = document.getElementById(`word${i}`).value.trim();
+        localStorage.setItem(`spellingWord${i}`, value);
+      }
+      document.getElementById('successMessage').style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
